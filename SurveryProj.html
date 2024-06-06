@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding-Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <div class="container">
+      <h1>Coding Survey</h1>
+      <p>Welcome to our coding survey!</p>
+      <form
+        id="survey-form"
+        method="post"
+        action="https://register-demo.freecodecamp.org"
+      >
+        <div class="grid">
+          <label id="name-label"
+            >Name
+            <input
+              class="name"
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+        </div>
+        <div class="grid">
+          <label id="email-label"
+            >Email
+            <input
+              class="email"
+              id="email1"
+              type="email"
+              placeholder="Enter your email"
+              name="email1"
+              required
+            />
+          </label>
+        </div>
+        <div class="grid">
+          <label class="code"
+            >Are you comfortable with basic coding concepts?
+            <select class="name" id="dropdown">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+        </div>
+        <div class="grid">
+          <label class="code"
+            >Do you have any prior experience with coding?
+            <select class="name" id="dropdown">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </label>
+        </div>
+        <div class="grid">
+          <label id="number-label"
+            >How many coding projects have you completed?
+            <input
+              class="number"
+              id="number"
+              type="number"
+              min="0"
+              max="5"
+              placeholder="no."
+            />
+          </label>
+        </div>
+        <div class="grid">
+          <label for="file">
+            <legend>Upload your projects here:</legend>
+            <input id="file" type="file" name="file"
+          /></label>
+        </div>
+        <div class="grid">
+          <label class="channel">
+            <legend>
+              On what platforms have you encountered coding? (Select all that
+              apply)
+            </legend>
+            <div class="radio">
+              <input value="radio1" type="checkbox" name="radio" />Social media
+              platforms
+            </div>
+            <div class="radio">
+              <input value="radio2" type="checkbox" name="radio" />Youtube
+            </div>
+            <div class="radio">
+              <input value="radio3" type="checkbox" name="radio" />Online
+              websites
+            </div>
+          </label>
+        </div>
+        <div class="grid">
+          <label>Are you interested in learning more about coding?</label>
+          <div class="radio">
+            <input type="radio" value="yes" name="coding-interest" required />
+            Yes
+          </div>
+          <div class="radio">
+            <input type="radio" value="no" name="coding-interest" /> No
+          </div>
+        </div>
+
+        <div class="grid">
+          <label class="bio"
+            >Briefly describe one of your coding projects (or a project you'd
+            like to build):
+            <textarea
+              class="name"
+              rows="5"
+              cols="30"
+              placeholder="Type here"
+            ></textarea>
+          </label>
+        </div>
+        <label>
+          <input class="submit" type="submit" id="submit" />
+        </label>
+      </form>
+    </div>
+  </body>
+</html>
